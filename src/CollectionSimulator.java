@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class ItalianContainers {
+public class CollectionSimulator {
     private final static int kDuplicateCost = 4;
     private final static int kTotalCollectionItems = 16;
     public static void main(String[] args) throws InterruptedException {
