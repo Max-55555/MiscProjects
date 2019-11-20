@@ -10,13 +10,12 @@ public class AverageFinder {
 
         File file = new File(filepath);
         Scanner scanner = new Scanner(file);
-        int[] arr = new int[scanner.nextInt()];
-        int[] presum = new int[arr.length + 1];
+        int length = scanner.nextInt();
+        int[] presum = new int[length + 1];
 
         //write array and  presum
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = scanner.nextInt();
-            presum[i + 1] = presum[i] + arr[i];
+        for (int i = 0; i < length; i++) {
+            presum[i + 1] = presum[i] + scanner.nextInt();
         }
         int[] query = new int[2];
         int len = scanner.nextInt();
